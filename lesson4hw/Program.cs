@@ -35,7 +35,7 @@ namespace lesson4hw
             int c = int.Parse(Console.ReadLine());
             int maxNum;
             int minNum;
-            int middleNum =0;
+            int middleNum = 0;
             //lets find the max number
             if (a > b)
                 maxNum = a;
@@ -63,8 +63,19 @@ namespace lesson4hw
                 middleNum = c;
 
             Console.WriteLine("{0} {1} {2}", maxNum, middleNum, minNum);
-                                            
 
-            }
+            // enter a number and display all the numbers from one to the num
+            Console.WriteLine("enter a number to count to");
+            int myCount = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= myCount; i++)
+                Console.WriteLine("{0}", i);
+
+            // enter a number and display all the even numbers from 2 to the num
+            Console.WriteLine("enter a number to count to with even numbers");
+            int myEvenCount = int.Parse(Console.ReadLine());
+            for (int i = 2; i <= myEvenCount; i=i+2)
+                Console.WriteLine("{0}", i);
+
         }
     }
+}
