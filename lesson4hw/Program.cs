@@ -98,6 +98,16 @@ namespace lesson4hw
             }
             Console.WriteLine("the smallest bumber is {0}", minOutofTen);
 
+            // enter 2 numbers and present all the numbers between them
+            Console.WriteLine("enter first number");
+            int x1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("enter 2nd number");
+            int x2 = int.Parse(Console.ReadLine());
+            if (x1 > x2)
+                for (int i = x2; i < x1; i++)
+                    Console.WriteLine(i);
+
+
         }
     }
 }
