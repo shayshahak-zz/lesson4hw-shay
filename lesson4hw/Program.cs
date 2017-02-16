@@ -88,7 +88,7 @@ namespace lesson4hw
             Console.WriteLine("the biggest bumber is {0}", maxOutofTen);
 
             // enter 10 numbers and i will display the smallest one
-            int minOutofTen = 0;
+            int minOutofTen = 2147483647;
             Console.WriteLine("enter 10 numbers and i will display the smallest one");
             for (int i = 0; i < 10; i++)
             {
