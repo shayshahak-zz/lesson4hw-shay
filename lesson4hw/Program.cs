@@ -54,12 +54,13 @@ namespace lesson4hw
                 minNum = c;
 
             //lets find the middle number
-            if (((maxNum ==a) && (minNum==b)) || ((maxNum==b)  && (minNum==a)))
-                middleNum = c;
-            if (((maxNum == a) && (minNum == c)) || ((maxNum == c) && (minNum == a)))
-                middleNum = b;
-            if (((maxNum == b) && (minNum == c)) || ((maxNum == c) && (minNum == b)))
+            if ((maxNum > a) && (minNum < a))
                 middleNum = a;
+            else
+                if ((maxNum > b) && (minNum < b))
+                middleNum = b;
+            else
+                middleNum = c;
 
             Console.WriteLine("{0} {1} {2}", maxNum, middleNum, minNum);
                                             
