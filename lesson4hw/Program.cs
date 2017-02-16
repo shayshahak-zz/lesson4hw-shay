@@ -73,8 +73,30 @@ namespace lesson4hw
             // enter a number and display all the even numbers from 2 to the num
             Console.WriteLine("enter a number to count to with even numbers");
             int myEvenCount = int.Parse(Console.ReadLine());
-            for (int i = 2; i <= myEvenCount; i=i+2)
+            for (int i = 2; i <= myEvenCount; i = i + 2)
                 Console.WriteLine("{0}", i);
+
+            // enter 10 numbers and i will display the biggest one
+            int maxOutofTen = 0;
+            Console.WriteLine("enter 10 numbers and i will display the biggest one");
+            for (int i = 0; i < 10; i++)
+            {
+                int x = int.Parse(Console.ReadLine());
+                if (x > maxOutofTen)
+                    maxOutofTen = x;
+            }
+            Console.WriteLine("the biggest bumber is {0}", maxOutofTen);
+
+            // enter 10 numbers and i will display the smallest one
+            int minOutofTen = 0;
+            Console.WriteLine("enter 10 numbers and i will display the smallest one");
+            for (int i = 0; i < 10; i++)
+            {
+                int x = int.Parse(Console.ReadLine());
+                if (x < minOutofTen)
+                    minOutofTen = x;
+            }
+            Console.WriteLine("the smallest bumber is {0}", minOutofTen);
 
         }
     }
